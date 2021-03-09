@@ -76,10 +76,13 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-
-    this.setState({tasks: this.loadTasks('tasks')}
-    );    
-  }
+    const serializedState = localStorage.getItem('tasks');
+    if (serializedState === null) {
+      return;}
+      this.setState({tasks: this.loadTasks('tasks')}
+      );
+  } 
+  
   
   render() {
     const {tasks} = this.state;
