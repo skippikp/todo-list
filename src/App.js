@@ -102,10 +102,10 @@ class App extends React.Component {
 
     return(
       <div className="App">
-        <h1>Активных задач: {activeTasks.length}</h1>
+        <h1 className="head">Активных задач: {activeTasks.length}</h1>
         {todoItems}
         <TaskInput addTask={this.addTask} />
-        <button onClick={() => this.saveTasks(this.state.tasks)}>Save task</button>
+        <button className="action-btn" onClick={() => this.saveTasks(this.state.tasks)}>Сохранить</button>
       </div>
     )
   };

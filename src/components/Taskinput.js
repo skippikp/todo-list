@@ -34,7 +34,7 @@ class TaskInput extends React.Component {
                     onChange={this.inputChange}
                     value={input}>
                 </input>
-                <button onClick={this.addTask}>Добавить</button>
+                <button className={"action-btn"} onClick={this.addTask}>Добавить</button>
             </div>
         );
     }

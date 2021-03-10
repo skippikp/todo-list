@@ -1,43 +1,98 @@
+
 .App {
   text-align: center;
-}
-
-.task-done {
-  text-decoration: line-through;
-}
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  background: linear-gradient(90deg, #6C04F1 -24.06%, rgba(174, 78, 250, 0) 120.21%), #5B049F;
+  mix-blend-mode: darken;
+  border-radius: 7px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  h1 {
+    background: orchid;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 28px;
+    margin: 0;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+.task {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 39%;
+  width: 300px;
+
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.task p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color:wheat;
+}
+
+.task:hover {
+  background-color: #04395e3d;
+}
+
+
+.task-input {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: var(--text);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input input {
+  width: 200px;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-input button {
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 10px;
 }
+.task-done {
+  background-color: #00000027;
+}
+.task-done :first-child{
+  text-decoration: line-through;
+  
+}
+
+.action-btn {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.action-btn:hover {
+  background-color: #04395e3d;
+  border-radius: 5px;
+}
+
+
+
+
+
